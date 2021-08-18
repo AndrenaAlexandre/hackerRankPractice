@@ -34,10 +34,9 @@ function plusOrMinus() {
         )
     };
 
-    console.log(posRatio.toFixed(6));
-    console.log(negRatio.toFixed(6));
-    console.log(zeroRatio.toFixed(6));
-
+    console.log("The ratio of positive numbers in your list is: ", posRatio.toFixed(6));
+    console.log("The ratio of negative numbers in your list is: ", negRatio.toFixed(6));
+    console.log("The ratio of zeros in your list is: ", zeroRatio.toFixed(6));
 }
 
 plusOrMinus()
