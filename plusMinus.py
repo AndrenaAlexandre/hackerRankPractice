@@ -4,29 +4,26 @@ n = array.length
 
 zero = 0
 
-howManyPos = 
-howManyZeros = 
-howManyNegs = 
+howManyPos = 0
+howManyZeros = 0 
+howManyNegs = 0
 
 posRatio = int(howManyPos) / n
 negRatio = int(howManyNegs) / n
 zeroRatio = int(howManyZeros) / n
 
-plusOrMinus() {
-
-    for(i = 0; i <= array.length; i+1){
-        if (array[i] > zero )
+def plusOrMinus():
+    for i in array: 
+        if i > zero:
             howManyPos + 1
-        else if (array[i] < zero )
+            continue
+        elif i < zero: 
             howManyNegs + 1
-        else(
+            continue
+        elif i == zero:
             howManyZeros + 1
-        )
-    }
-
-    
-    
-
-}
+            continue
+        else:
+            break
 
 plusOrMinus()
